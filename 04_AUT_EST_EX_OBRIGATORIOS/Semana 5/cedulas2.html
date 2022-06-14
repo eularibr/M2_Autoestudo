@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Exercício 2 - Semana 5 (Cédulas)</h1>
+    <p> Informe o preço de um produto. Aqui aparecerão quantas notas serão necessárias para efetuar o pagamento da compra desse produto com a menor quantidade possível de notas.</p>
+    <div>
+        <label>Valor
+            <input type="number" name="valor" id="valor">
+        </label>
+        <label>
+            <button onclick="calcularNotas()">Verificar notas</button>
+        </label>
+    </div>
+        <p id="resultado"></p>
+<p id="notas"></p>
+</body>
+<script>
+
+    //Função que vai comparar o valor digitado e executar a contagem das notas fazendo uma comparação. Se for verdadeiro, ele acrescenta um nota e subtrai do mesmo valor para validação.
+    function calcularNotas() {
+        //Variáveis de todas as notas possíveis
+        var cem = 0
+        var cinquenta = 0
+        var vinte = 0
+        var dez = 0
+        var cinco = 0
+        var dois = 0
+        var um = 0
+        var notas = 0
+        let valor = document.getElementById("valor").value;
+        while (valor >= 100){
+            valor -= 100;
+            cem += 1;
+        }
+        while (valor >= 50){
+            valor -= 50;
+            cinquenta += 1;
+        }
+        while (valor >= 20){
+            valor -= 20;
+            vinte += 1;
+        }
+        while (valor >= 10){
+            valor -= 10;
+            dez += 1;
+        }
+        while (valor >= 5){
+            valor -= 5;
+            cinco += 1;
+        }
+        while (valor >= 2){
+            valor -= 2;
+            dois += 1;
+        }
+        while (valor >= 1){
+            valor -= 1;
+            dois += 1;
+        }
+        //Resultado final.
+            alert("Eu vou percisar de\n"+ cem +" Notas de cem\n"+ cinquenta +" Notas de cinquenta\n"+ vinte +" Notas de vinte\n"+ dez +" Notas de dez\n"+ cinco +" Notas de cinco\n"+ dois+" Notas de dois\n"+ um+" Moedas de um real.");
+        }
+</script>
+</html>
