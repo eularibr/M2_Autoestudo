@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     <div id="container">
         <div id="sidebar">
             <div>
-                <button onclick="escuro()" id="botao">Darkmode
+                <button onclick="escuro()" id="botao1">Darkmode
                 </button>
                 
             </div>
@@ -31,11 +32,12 @@
                 <p>larissa.carvalho@sou.inteli.edu.br</p><br>
                 <li><strong>Idade:</strong></li>
                 <p>18 anos</p><br>
+                <li><strong>My Birthday:</strong></li>
+                <p>10/04/2004</p><br>
                 <li><strong>Telefone:</strong></li>
-                <p>(11)99500-1004</p><br>
+                <p>(11) 99500-1004</p><br>
                 <li><strong>Linkedin:</strong></li><br>
-                <a
-                    href="https://www.linkedin.com/in/larissa-carvalho-0564ab231/">https://www.linkedin.com/larissa-carvalho</a><br>
+                <a href="https://www.linkedin.com/in/larissa-carvalho-0564ab231/">https://www.linkedin.com/larissa-carvalho</a><br>
             </ul>
         </div>
         <div id="main">
@@ -73,8 +75,24 @@
                     <p> - Adoro jogar Brawl Stars nas horas vagas;</p>
                 </ul>
             </div>
+            <div id="db">
+                <button onclick="get()" id="botao2">Get DataBase</button>
+                <table border="1">  
+                    <th id="nome">Nome </th>
+                    <th id="endereço">Endereço</th>
+                    <th id="pocs">Melhores POCS</th>
+                    <th id="hobby">Hobby</th>
+                    <tr id="bandodedados">
+                        <td id="name"></td>
+                        <td id="address"></td>
+                        <td id="gays"></td>
+                        <td id="robi"></td>
+                    </tr> 
+                </table>
+            </div>
         </div>
     </div>
+
     <script>
         window.onload = function () {
             setTimeout("acess()", 500);
@@ -82,7 +100,7 @@
 
         function acess() {
             
-           alert("Olá! Seja bem-vindo(a) ao meu currículo!")
+           alert("OLÁÁÁÁÁ")
 
         }
     </script>
