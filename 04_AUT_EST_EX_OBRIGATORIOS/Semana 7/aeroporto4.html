@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="aeroporto.js"></script>
+    <title>Exercício aeroporto</title>
+</head>
+<body>
+    <h1> Exercício 4 - Total da compra de um vôo com desconto </h1>
+    <h3> Digite a quantidade de pessoas: </h3>
+    <label for="pessoas"></label>
+    <input type="number" min="1" id="pessoas" name="pessoas" oninput="validity.valid||(value='');"/><br><br>
+    <h3>Selecione abaixo o período:</h3>
+    <label for="time"></label>
+    <select id="time" name="time">
+    <option value="opção">Selecionar</option>
+    <option value="dia">Diurno</option>
+    <option value="noite">Noturno</option>
+    </select>
+    <br><br><br>
+
+    <button type="botao" onclick="contar()">Verificar valor</button>
+    <h2>O valor total a ser pago é de: <span id="total"></span></h3>
+    </div>
+    
