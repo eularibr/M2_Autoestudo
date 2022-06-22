@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "mediaalunos5.js"></script>
-    <title>Nota Alunos</title>
-</head>
-<body>
-    <h1> Exercício 5 - Semana 7 - Notas Alunos </h1>
-    <h2> Digite a quantidade de alunos: </h2>
-    <input placeholder="Quantidade" id="valor">
-    <button onclick="save()" id="save"> salvar </button> <br>
-    <input placeholder="Nota Prova" id="prova">
-    <button onclick="save()" id="save"> salvar </button> <br>
-    <input placeholder="Nota Trabalho" id="trabalho">
-    <button onclick="save()" id="save"> salvar </button>
-    <h2> Quantidade de alunos: </h2>
-        <div id="qtd">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Média de cada aluno</title>
+        <script src = "mediaalunos5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="media.css"/>
+    </head>
+    <body>
+        <h1> Exercício 5 - Média de cada aluno</h1>
+        <h3> Digite a quantidade de alunos da sala de aula:</h3>
+        <input id = "valorEntrada">
+        <div id="buttons">
+            <button onclick = "adicionar()" id = "confirm">Adicionar</button>
+            <button onclick = "save()" id = "save">Salvar</button>
         </div>
-    <h2> Nota Prova: </h2>
-        <div id="prv">
-        </div>
-    <h2> Nota Trabalho: </h2>
-        <div id="trab">
-        </div>
-</body>
-</html>
+        <div id="result"></div>
+        <div id="values"></div>
+    </body>
+    </html>
